@@ -1,0 +1,147 @@
+.customer-img {
+    margin: 0 auto;
+}
+
+.customer-reviews-box {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #c9c4c4;
+    &::before {
+        display: inline-block;
+        position: absolute;
+        content: '';
+        width: 54px;
+        height: 40px;
+        top: 29px;
+        left: 64px;
+        background-image: url(../images/quotes.png);
+        background-size: cover;
+        @media screen and (min-width: 480px) {
+            left: 49px;
+        }
+        @media screen and (min-width: 768px) {
+            left: 30px;
+        }
+        @media screen and (min-width: 1280px) {
+            left: 87px;
+    }
+    }
+}
+
+.customer-reviews-text {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.58;
+    text-align: center;
+    padding: 43px 60px 26px;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 2.14;
+        letter-spacing: 0.04em;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 1.86;
+    }
+}
+
+.customer-reviews-list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.customer-reviews-item {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--dots-color);
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.customer-reviews-underlist {
+    text-align: center;
+    margin-top: 18px;
+}
+
+// ------- ПОДЧЕРКИВАНИЕ ТЕКСТА --------
+
+.slider-text-wrapper {
+	background-color: #FAFAFA;
+	padding: 44px 50px 16px;
+    @media screen and (min-width: 1280px) {
+        padding: 44px 100px 16px;
+    }
+}
+
+.slider-text {
+	font-family:'DM Sans', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 2.55;
+	padding: 0 18px;
+	background-image: repeating-linear-gradient(to top, #E1E1E1 0px 1px, transparent 1px 31px);
+	text-align: center;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 2.14;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 1.86;
+    }
+}
+
+// --------------  SWIPER  ---------------
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-wrapper {
+    padding-bottom: 45px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--bg-white-color);
+    background-image: url(../images/home.svg);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    // color: var(--dots-color);
+    display: none;
+}
+
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
